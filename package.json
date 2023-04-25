@@ -1,10 +1,12 @@
 {
   "name": "semester-project-2",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "The repo for the Semester project 2 for FED second year.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src/**/*.js",
+    "lint-fix": "eslint src/**/*.js --cache --fix"
   },
   "repository": {
     "type": "git",
@@ -19,5 +21,9 @@
   "homepage": "https://github.com/Mokki78/semester-project-2#readme",
   "dependencies": {
     "bootstrap": "^5.2.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.39.0",
+    "prettier": "^2.8.8"
   }
 }
