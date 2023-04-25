@@ -8,3 +8,7 @@ nav a {
     text-decoration: none;
   }
   
+  #profile {
+    font-size: 20px;
+    color: orange;
+  }
