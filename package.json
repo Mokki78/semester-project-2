@@ -4,7 +4,8 @@
   "description": "The repo for the Semester project 2 for FED second year.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src/**/*.js"
   },
   "repository": {
     "type": "git",
