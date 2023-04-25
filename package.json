@@ -1,6 +1,6 @@
 {
   "name": "semester-project-2",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The repo for the Semester project 2 for FED second year.",
   "main": "index.js",
   "scripts": {
