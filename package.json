@@ -19,5 +19,8 @@
   "homepage": "https://github.com/Mokki78/semester-project-2#readme",
   "dependencies": {
     "bootstrap": "^5.2.3"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.8"
   }
 }
