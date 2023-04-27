@@ -29,8 +29,6 @@
                         <img src="/assets/img/Logo_1.jpg" alt="Logo of EasyBid" style="width: 250px;">
                     </a>
                 </div>
-
-
                 <div class="col-12 border-top border-bottom border-dark d-none d-sm-block">
                     <ul class="navbar-nav mx-5">
                         <li class="nav-item p-2 border-end border-start border-dark">
@@ -56,18 +54,15 @@
 
                 </div>
                 <div class="col-12 sign-up-button">
-                    <button type="button" href="#modal"
+                    <button type="button" href="#modal" id="log-in-Modal"
                         class="btn btn-dark m-5 d-none d-md-block position-absolute top-0 end-0" data-bs-toggle="modal"
-                        data-bs-target="#myModal">
-                        Sign up </button>
+                        data-bs-target="#log-in-Modal">
+                        Log in </button>
                 </div>
                 <div class="col m-2 d-flex d-md-none position-absolute top-0 end-0">
                     <button class="btn d-md-none " href="#modal"><i class="bi bi-person-circle"></i></button>
 
                 </div>
-
-
-
                 <button class="navbar-toggler collapsed  position-absolute bottom-0 start-0 m-3" type="button"
                     data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="#navbarNav"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -96,18 +91,119 @@
                         <li class="nav-item p-2 mx-auto  mb-2 border border-dark">
                             <a class=" navbar-link" href="last-call.html">Last call</a>
                         </li>
-
                     </ul>
-
-
         </nav>
-
-
-
-
     </header>
     <main>
+        <div class="container-sm ">
 
+
+        </div>
+        <div class="container-sm p-5 mt-5">
+            <div class="row justify-content-md-center p-5 mt-5">
+                <div class="col-sm-12 col-md-6 p-5">
+                    <p>Welcome to EasyBid!
+
+                        This is an auctions site and you
+                        can bid on whatever you would like to
+                        find its way home to you,
+                        or put your old treasures
+                        out for auction.
+
+                        Sign up today and get your 1000 points
+                        starter credit.
+                    </p>
+                    <button type="button" href="#modal" class="btn btn-dark m-5 d-flex position top-50 end-50"
+                        data-bs-toggle="modal" data-bs-target="#sign-up-Modal">
+                        Register</button>
+                </div>
+                <div class="col-sm-12 col-md-6 p-3">
+                    <img src="/assets/img/intro_img.jpg" alt="shoes" style="width: 300px">
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="sign-up-Modal">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Modal Heading</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <form action="/action_page.php">
+                            <div class="mb-3 mt-3">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email"
+                                    name="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="pwd" class="form-label">Password:</label>
+                                <input type="password" class="form-control" id="pwd" placeholder="Enter password"
+                                    name="pswd">
+                            </div>
+                            <div class="form-check mb-3">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="log-in-Modal">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Modal Heading</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <form action="/action_page.php">
+                            <div class="mb-3 mt-3">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email"
+                                    name="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="pwd" class="form-label">Password:</label>
+                                <input type="password" class="form-control" id="pwd" placeholder="Enter password"
+                                    name="pswd">
+                            </div>
+                            <div class="form-check mb-3">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <nav class="navbar navbar-expand-sm navbar-black fixed-bottom bg-light">
