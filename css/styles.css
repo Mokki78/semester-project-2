@@ -4,11 +4,76 @@ nav a {
   }
   
   nav a:hover {
-    color: #f2f1ed;
+    color: grey;
     text-decoration: none;
   }
-  
-  #profile {
-    font-size: 20px;
-    color: orange;
+
+  .navbar-toggler {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transition: .5s ease-in-out;
   }
+
+  .navbar-toggler,
+  .navbar-toggler:focus,
+  .navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+  }
+
+  .navbar-toggler span {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .toggler-icon {
+    display: block;
+    position: absolute;
+    z-index: 50px;
+    height: 2px;
+    width: 100%;
+    background: #EEAC32;
+    border-radius: 1px;
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: .25 ease-in-out;
+  }
+
+  .middle-bar {
+    margin-top: 0px;
+
+  }
+
+  .navbar-toggler .top-bar {
+    margin-top: 0px;
+    transform: rotate(135deg);
+  }
+
+  .navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+
+  .navbar-toggler .bottom-bar {
+    margin-top: 0px;
+    transform: rotate(-135deg);
+  }
+
+  .navbar-toggler.collapsed .top-bar {
+    margin-top: -10px;
+    transform: rotate(0deg);
+  }
+
+   .navbar-toggler.collapsed .middle-bar {
+     opacity: 1;
+     filter: aplha(opacity=100)
+   
+  }
+
+  .navbar-toggler.collapsed .bottom-bar {
+    margin-top: 10px;
+    transform: rotate(0deg);
+  
+ }
