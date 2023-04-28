@@ -15,7 +15,7 @@
 
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
     <header>
         <nav class="navbar navbar-expand-sm fixed-top navbar-light bg-light">
             <div class="container-fluid flex-column">
@@ -29,8 +29,6 @@
                         <img src="/assets/img/Logo_1.jpg" alt="Logo of EasyBid" style="width: 250px;">
                     </a>
                 </div>
-
-
                 <div class="col-12 border-top border-bottom border-dark d-none d-sm-block">
                     <ul class="navbar-nav mx-5">
                         <li class="nav-item p-2 border-end border-start border-dark">
@@ -55,19 +53,11 @@
                     </ul>
 
                 </div>
-                <div class="col-12 sign-up-button">
-                    <button type="button" href="#modal"
-                        class="btn btn-dark m-5 d-none d-md-block position-absolute top-0 end-0" data-bs-toggle="modal"
-                        data-bs-target="#myModal">
-                        Sign up </button>
-                </div>
+                <a class="btn btn-dark m-5 d-none d-md-block position-absolute top-0 end-0" data-bs-toggle="modal"
+                    href="#ModalToggle" role="button">New auction</a>
                 <div class="col m-2 d-flex d-md-none position-absolute top-0 end-0">
                     <button class="btn d-md-none " href="#modal"><i class="bi bi-person-circle"></i></button>
-
                 </div>
-
-
-
                 <button class="navbar-toggler collapsed  position-absolute bottom-0 start-0 m-3" type="button"
                     data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="#navbarNav"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -75,7 +65,6 @@
                     <span class="toggler-icon middle-bar"></span>
                     <span class="toggler-icon bottom-bar"></span>
                 </button>
-
                 <div class="container-md collapse navbar-collapse flex-column justify-content-around" id="navbarNav">
                     <ul class="navbar-nav d-md-none">
                         <li class="nav-item p-2 mx-auto mt-4 mb-2 border border-dark button-animation">
@@ -96,17 +85,245 @@
                         <li class="nav-item p-2 mx-auto  mb-2 border border-dark">
                             <a class=" navbar-link" href="last-call.html">Last call</a>
                         </li>
-
                     </ul>
-
-
         </nav>
-
-
-
-
     </header>
     <main>
+        <h1>Hi there</h1>
+        <div class="container-fluid bg-dark p-2 mt-5" style="color: orange;">
+            <div class="row">
+                <div class="col pt-5">
+                    <img src="/assets/img/avatar_demo.jpg" class="img-fluid rounded-circle mx-auto d-block" alt="shoes"
+                        style="width: 200px">
+                </div>
+
+                <div class="col-4 text-light m-2 p-5">
+                    <div class="col-4 p-2 mb-2">
+                        <h3>Alexandra81</h3>
+                    </div>
+                    <div class="col-4 p-2 mb-2">
+                        <h6>Your current credit is:</h6>
+                    </div>
+                </div>
+
+                <div class="col-4"> </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="scroll-nav">
+                    <ul class="navbar-nav" id="navbar">
+                        <li class="nav-item-scroll">
+                            <a class="nav-link" href="#my-auctions">My auctions</a>
+                        </li>
+                        <li class="nav-item-scroll">
+                            <a class="nav-link" href="#my-bids">My bids</a>
+                        </li>
+                        <li class="nav-item-scroll">
+                            <a class="nav-link" href="#my-favs">My favourites</a>
+                        </li>
+                    </ul>
+                </div>
+
+        </nav>
+        <a class="btn btn-dark m-5 d-none d-md-block position-absolute top-0 end-0" href="#myModal" role="button">New
+            auction</a>
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Your new auction</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-2">
+                                <label for="formFile" class="form-label">Upload your images</label>
+                                <input class="form-control" type="file" id="formFile">
+                            </div>
+                            <label for="comment">What are you auctining today?:</label>
+                            <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                            <div clas="box bg-light 200px">
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Submit
+                                        content</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="background-image">
+                            <div class="opacity-25%">
+                                <img src="/assets/img/intro_img.jpg" class="mx-auto d-block" style="width:100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+
+        <div class="container-sm pt-4" id="my-auctions">
+            <div class="row justify-content-around">
+                <div class="column mb-3 mt-5">
+                    <h3>My auctions</h3>
+                </div>
+                <div class="col-3 bg-dark text-light m-2 p-5">
+                    <p>Blablaba</p>
+
+                </div>
+                <div class="col-3 bg-dark text-light m-2">
+
+                </div>
+                <div class="col-3 bg-dark text-light m-2">
+
+                </div>
+
+            </div>
+            <div class="row justify-content-around">
+                <div class="column">
+
+                </div>
+                <div class="col-3 bg-dark text-light m-2 p-5">
+                    <p>Blablaba</p>
+
+                </div>
+                <div class="col-3 bg-dark text-light m-2">
+
+                </div>
+                <div class="col-3 bg-dark text-light m-2">
+
+                </div>
+
+            </div>
+            <div class="row justify-content-around">
+                <div class="column">
+
+                </div>
+                <div class="col-3 bg-dark text-light m-1 p-5">
+                    <p>Blablaba</p>
+
+                </div>
+                <div class="col-3 bg-dark text-light m-1">
+
+                </div>
+                <div class="col-3 bg-dark text-light m-1">
+
+                </div>
+                <div class="col-12 post-button">
+                    <button type="button" href="#modal" id="log-in-Modal"
+                        class="btn btn-outline-dark m-5 d-none d-md-block position-absolute top-0 end-0"
+                        data-bs-toggle="modal" data-bs-target="#log-in-Modal" style="color: orange">
+                        New auction</button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        </div>
+        <div class="container-sm p-4" id="my-bids">
+            <div class="row justify-content-around">
+                <div class="column mb-3 mt-5">
+                    <h3>My bids</h3>
+                </div>
+                <div class="col-3 bg-dark text-light m-2 p-5">
+                    <p>Blablaba</p>
+
+                </div>
+                <div class="col-3 bg-dark text-light m-2">
+
+                </div>
+                <div class="col-3 bg-dark text-light m-2">
+
+                </div>
+
+            </div>
+            <div class="row justify-content-around">
+                <div class="column">
+
+                </div>
+                <div class="col-3 bg-dark text-light m-2 p-5">
+                    <p>Blablaba</p>
+
+                </div>
+                <div class="col-3 bg-dark text-light m-2">
+
+                </div>
+                <div class="col-3 bg-dark text-light m-2">
+
+                </div>
+
+            </div>
+            <div class="row justify-content-around">
+                <div class="column">
+
+                </div>
+                <div class="col-3 bg-dark text-light m-1 p-5">
+                    <p>Blablaba</p>
+
+                </div>
+                <div class="col-3 bg-dark text-light m-1">
+
+                </div>
+                <div class="col-3 bg-dark text-light m-1">
+
+                </div>
+
+            </div>
+
+            <div class="container-sm p-4 pb-5" id="my-favs">
+                <div class="row justify-content-around">
+                    <div class="column mb-3 mt-5">
+                        <h3>My favourites</h3>
+                    </div>
+                    <div class="col-3 bg-dark text-light m-2 p-5">
+                        <p>Blablaba</p>
+
+                    </div>
+                    <div class="col-3 bg-dark text-light m-2">
+
+                    </div>
+                    <div class="col-3 bg-dark text-light m-2">
+
+                    </div>
+
+                </div>
+                <div class="row justify-content-around">
+                    <div class="column">
+
+                    </div>
+                    <div class="col-3 bg-dark text-light m-2 p-5">
+                        <p>Blablaba</p>
+
+                    </div>
+                    <div class="col-3 bg-dark text-light m-2">
+
+                    </div>
+                    <div class="col-3 bg-dark text-light m-2">
+
+                    </div>
+
+                </div>
+                <div class="row justify-content-around">
+                    <div class="column">
+
+                    </div>
+                    <div class="col-3 bg-dark text-light m-1 p-5">
+                        <p>Blablaba</p>
+
+                    </div>
+                    <div class="col-3 bg-dark text-light m-1">
+
+                    </div>
+                    <div class="col-3 bg-dark text-light m-1">
+
+                    </div>
+
+                </div>
+
+
 
     </main>
     <footer>
