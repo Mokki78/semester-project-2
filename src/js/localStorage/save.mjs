@@ -1,1 +1,3 @@
-const accessToken = localStorage.setItem("accessToken", "insert access token here");
+export const save = (key, value) => {
+    localStorage.setItem(key, JSON.stringify(value))
+}
