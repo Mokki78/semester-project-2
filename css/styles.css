@@ -1,3 +1,4 @@
+
 nav a {
     color: black;
     text-decoration: none;
@@ -7,6 +8,29 @@ nav a {
     color: orange;
     text-decoration: none;
   }
+
+   .searchBar {
+    max-width:100%;
+    min-height: 200px;
+    padding: 5px;
+    margin: 10px;
+  }
+
+  .search-result {
+    max-width:100%;
+    min-height: 200px;
+    padding: 5px;
+    margin: 10px;
+    background-color: black;
+  }
+
+  .auction-card {
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    color: black;
+  }
+  
 
   .navbar-toggler {
     width: 20px;
