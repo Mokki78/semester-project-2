@@ -1,11 +1,12 @@
-import { load } from 
+import { load } from '../localStorage/load.mjs';
+
 
 export const headers = (contentType) => {
     const token = storage.load("token");
     const headers= {}
 
     if (contentType) {
-        headers["Content-Type"] = constntType;
+        headers["Content-Type"] = contentType;
     }
     if(token) {
         headers.Authorization = 'Bearer ${token}';
