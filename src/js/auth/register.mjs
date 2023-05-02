@@ -1,21 +1,32 @@
-fetch('https://example.com/api/profiles', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json'
-  },
-  body: JSON.stringify({
-    name: 'John Doe',
-    email: 'johndoe@example.com',
-    password: 'password123'
-  })
-})
-.then(response => response.json())
-.then(data => {
-  // Handle the response data here
-  console.log(data);
-})
-.catch(error => {
-  // Handle any errors here
-  console.error('Error:', error);
-});
+
+
+import { API_BASE_URL } from "../api/apiBase.mjs";
+
+
+export async function registerProfile() {
+  try {
+    await fetch(`${API_BASE_URL}/auction/auth/register`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        name: 'my_username',
+        email: 'first.last@stud.noroff.no',
+        password: 'password123',
+        avatar: 'https://img.service.com/avatar.jpg'
+      })
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      window.location.href = '/path/to/ModalToggle2/index.html';
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+  } catch (error) {
+    console.error(error);
+  }
+}
 
