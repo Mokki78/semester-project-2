@@ -1,4 +1,5 @@
-import { load } from '../localStorage/load.mjs';
+
+import { load } from '../localStorage';
 
 
 export const headers = (contentType) => {
@@ -14,4 +15,3 @@ export const headers = (contentType) => {
     
     return headers;
 }
-
