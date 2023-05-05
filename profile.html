@@ -90,75 +90,93 @@
     </header>
     <main>
         <h1>Hi there</h1>
-        <div class="container-fluid bg-dark p-2 mt-5" style="color: orange;">
+        <div class="container-fluid bg-dark p-2 mt-5" id="myContainer" style="color: orange;">
             <div class="row">
                 <div class="col pt-5">
-                    <img src="/assets/img/avatar_demo.jpg" class="img-fluid rounded-circle mx-auto d-block" alt="shoes"
-                        style="width: 200px">
+                    <img class="img-fluid rounded-circle mx-auto d-block" alt="" style="width: 200px">
                 </div>
 
                 <div class="col-4 text-light m-2 p-5">
                     <div class="col-4 p-2 mb-2">
-                        <h3>Alexandra81</h3>
+                        <h3></h3>
                     </div>
                     <div class="col-4 p-2 mb-2">
-                        <h6>My current credit is:</h6>
+                        <h6></h6>
                     </div>
                 </div>
-
-                <div class="col-4"> </div>
             </div>
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <div class="collapse navbar-collapse" id="scroll-nav">
-                    <ul class="navbar-nav" id="navbar">
-                        <li class="nav-item-scroll">
-                            <a class="nav-link" href="#my-auctions">My auctions</a>
-                        </li>
-                        <li class="nav-item-scroll">
-                            <a class="nav-link" href="#my-bids">My bids</a>
-                        </li>
-                        <li class="nav-item-scroll">
-                            <a class="nav-link" href="#my-favs">My favourites</a>
-                        </li>
-                    </ul>
-                </div>
 
-        </nav>
-        <a class="btn btn-dark m-5 d-none d-md-block position-absolute top-0 end-0" href="#myModal" role="button">New
-            auction</a>
-        <div class="modal fade" id="myModal">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Your new auction</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+
+            <div class="container-fluid bg-dark p-2 mt-5" id="myContainer" style="color: orange;">
+                <div class="row">
+                    <div class="col pt-5">
+                        <img src="/assets/img/avatar_demo.jpg" class="img-fluid rounded-circle mx-auto d-block"
+                            alt="shoes" style="width: 200px">
                     </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="mb-2">
-                                <label for="formFile" class="form-label">Upload your images</label>
-                                <input class="form-control" type="file" id="formFile">
-                            </div>
-                            <label for="comment">What are you auctining today?:</label>
-                            <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
-                            <div clas="box bg-light 200px">
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Submit
-                                        content</button>
+
+                    <div class="col-4 text-light m-2 p-5">
+                        <div class="col-4 p-2 mb-2">
+                            <h3>Alexandra81</h3>
+                        </div>
+                        <div class="col-4 p-2 mb-2">
+                            <h6>My current credit is:</h6>
+                        </div>
+                    </div>
+
+                    <div class="col-4"> </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <div class="collapse navbar-collapse" id="scroll-nav">
+                        <ul class="navbar-nav" id="navbar">
+                            <li class="nav-item-scroll">
+                                <a class="nav-link" href="#my-auctions">My auctions</a>
+                            </li>
+                            <li class="nav-item-scroll">
+                                <a class="nav-link" href="#my-bids">My bids</a>
+                            </li>
+                            <li class="nav-item-scroll">
+                                <a class="nav-link" href="#my-favs">My favourites</a>
+                            </li>
+                        </ul>
+                    </div>
+
+            </nav>
+            <a class="btn btn-dark m-5 d-none d-md-block position-absolute top-0 end-0" href="#myModal"
+                role="button">New
+                auction</a>
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Your new auction</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-2">
+                                    <label for="formFile" class="form-label">Upload your images</label>
+                                    <input class="form-control" type="file" id="formFile">
                                 </div>
-                            </div>
-                        </form>
-                        <div class="background-image">
-                            <div class="opacity-25%">
-                                <img src="/assets/img/intro_img.jpg" class="mx-auto d-block" style="width:100%">
+                                <label for="comment">What are you auctining today?:</label>
+                                <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                                <div clas="box bg-light 200px">
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Submit
+                                            content</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="background-image">
+                                <div class="opacity-25%">
+                                    <img src="/assets/img/intro_img.jpg" class="mx-auto d-block" style="width:100%">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
 
 
