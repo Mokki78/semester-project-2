@@ -1,4 +1,4 @@
-import{ login } from "../auth/index.mjs";
+
 import { LoggedInUser} from "../listeners/loggedInUser.mjs";
 
 export async function loginListener(event) {

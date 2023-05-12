@@ -13,6 +13,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <script src="/src/js/api/auth/index.mjs" type="module" defer></script>
+    <script src="/src/js/api/auth/index.mjs" type="module" defer></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
@@ -62,6 +63,7 @@
 
                 <a class="ban ban-dark m-5 d-none d-md-block position-absolute top-9 end-0" data-bs-toggle="modal"
                     href="#ModalToggle" role="button">sign up </a>
+                <a class="ban ban-dark m-5 d-none d-md-block" role="button" id="logout">log out </a>
 
                 <div class="col m-2 d-flex d-md-none position-absolute top-0 end-0">
                     <button class="btn d-md-none " href="#modal"><i class="bi bi-person-circle"></i></button>
@@ -327,85 +329,6 @@
 
                     </div>
 
-                </div>
-                <div class="modal fade" id="ModalToggle" aria-hidden="true" aria-labelledby="ModalToggleLabel"
-                    tabindex="-1">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content p-5">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="sign-up-Modal">Sign up</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <form id="registerForm">
-                                    <div class="mb-3">
-                                        <label for="registerName" class="form-label">Username</label>
-                                        <input required type="text" class="form-control" id="registerName"
-                                            aria-describedby="registerName">
-
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="registerEmail" class="form-label">Email address</label>
-                                        <input required type="email" class="form-control" id="registerEmail"
-                                            pattern="[\w\-.]+@(stud.)?noroff.no$" aria-describedby="registerEmail">
-                                        <div class="form-text">Must be a valid Noroff student or staff
-                                            email.</div>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="registerPassword" class="form-label">Password</label>
-                                        <input required type="password" class="form-control" id="registerPassword">
-                                    </div>
-                                    <div class="mb-3">
-                                        <input type="url" class="form-control" id="registerAvatar" name="avatar"
-                                            placeholder="Avater URL"></input>
-                                        <label for="registerAvatar">Only images with valid URL will be displayed</label>
-
-                                    </div>
-
-                                    <button type="submit" class="btn btn-dark">Submit</button>
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <p>Are you already a member?</p>
-                                <button class="btn btn-dark" data-bs-target="#ModalToggle2" data-bs-toggle="modal"
-                                    data-bs-dismiss="modal">Log in</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade" id="ModalToggle2" aria-hidden="true" aria-labelledby="ModalToggleLabel2"
-                    tabindex="-1">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalToggleLabel2">Log in</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <form id="logInForm">
-                                    <div class="mb-3">
-                                        <label for="loginEmail" class="form-label">Email address</label>
-                                        <input type="email" class="form-control" id="loginEmail"
-                                            aria-describedby="loginEmail">
-                                        <div id="loginEmail" class="form-text"></div>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="loginPassword" class="form-label">Password</label>
-                                        <input type="password" class="form-control" id="loginPassword">
-                                    </div>
-
-                                    <button type="submit" class="btn btn-dark">Submit</button>
-                                </form>
-
-                            </div>
-                            <div class="modal-footer">
-                                <button class="btn btn-dark" data-bs-target="#ModalToggle" data-bs-toggle="modal"
-                                    data-bs-dismiss="modal">Back</button>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="modal fade" id="ModalToggle" aria-hidden="true" aria-labelledby="ModalToggleLabel"
                     tabindex="-1">

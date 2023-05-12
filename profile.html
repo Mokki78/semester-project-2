@@ -12,6 +12,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="/src/js/api/auth/index.mjs" type="module" defer></script>
+    <script src="/src/js/fetch-profile/profile.mjs" type="module" defer></script>
+    <script src="/src/js/api/auth/logout.mjs" type="module" defer></script>
 
 </head>
 
@@ -53,6 +56,7 @@
                     </ul>
 
                 </div>
+                <a class="btn btn-dark m-5 d-none d-md-block" id="logout" role="button">Log out</a>
                 <a class="btn btn-dark m-5 d-none d-md-block position-absolute top-0 end-0" data-bs-toggle="modal"
                     href="#ModalToggle" role="button">New auction</a>
                 <div class="col m-2 d-flex d-md-none position-absolute top-0 end-0">
@@ -86,42 +90,47 @@
                             <a class=" navbar-link" href="last-call.html">Last call</a>
                         </li>
                     </ul>
+
         </nav>
     </header>
     <main>
-        <h1>Hi there</h1>
+
+
+
         <div class="container-fluid bg-dark p-2 mt-5" id="myContainer" style="color: orange;">
             <div class="row">
                 <div class="col pt-5">
-                    <img class="img-fluid rounded-circle mx-auto d-block" alt="" style="width: 200px">
+
                 </div>
 
                 <div class="col-4 text-light m-2 p-5">
                     <div class="col-4 p-2 mb-2">
-                        <h3></h3>
+
                     </div>
                     <div class="col-4 p-2 mb-2">
-                        <h6></h6>
+
                     </div>
                 </div>
-            </div>
 
+                <h1></h1>
+                <div id="welcomeMessage"></div>
+                <div class="container-fluid bg-dark p-4 mt-5" id="profileContainer" style="color: orange;">
+                    <div class="row">
+                        <div class="col pt-5">
+                            <img class="img-fluid rounded-circle mx-auto d-block" alt="" style="width: 200px">
+                        </div>
 
-            <div class="container-fluid bg-dark p-2 mt-5" id="myContainer" style="color: orange;">
-                <div class="row">
-                    <div class="col pt-5">
-                        <img src="/assets/img/avatar_demo.jpg" class="img-fluid rounded-circle mx-auto d-block"
-                            alt="shoes" style="width: 200px">
+                        <div class="col-4 text-light m-2 p-5">
+                            <div class="col-4 p-2 mb-2">
+                                <h3></h3>
+                            </div>
+                            <div class="col-4 p-2 mb-2">
+                                <h6></h6>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="col-4 text-light m-2 p-5">
-                        <div class="col-4 p-2 mb-2">
-                            <h3>Alexandra81</h3>
-                        </div>
-                        <div class="col-4 p-2 mb-2">
-                            <h6>My current credit is:</h6>
-                        </div>
-                    </div>
+
 
                     <div class="col-4"> </div>
                 </div>
