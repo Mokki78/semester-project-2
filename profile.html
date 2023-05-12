@@ -53,15 +53,21 @@
                         <li class="nav-item p-2 border-end border-dark">
                             <a class="navbar-link" href="profile.html">My profile</a>
                         </li>
+
                     </ul>
 
                 </div>
-                <a class="btn btn-dark m-5 d-none d-md-block" id="logout" role="button">Log out</a>
-                <a class="btn btn-dark m-5 d-none d-md-block position-absolute top-0 end-0" data-bs-toggle="modal"
-                    href="#ModalToggle" role="button">New auction</a>
-                <div class="col m-2 d-flex d-md-none position-absolute top-0 end-0">
-                    <button class="btn d-md-none " href="#modal"><i class="bi bi-person-circle"></i></button>
+                <div>
+                    <a class="btn btn-dark m-5 d-none d-md-block  position-absolute top-0 end-0 mx-4" id="logout"
+                        role="button">Log out</a>
+                    <a class="btn btn-dark m-5 d-none d-md-block position-absolute top-0 end-0" data-bs-toggle="modal"
+                        href="#ModalToggle" role="button">New auction</a>
+
+
                 </div>
+
+
+
                 <button class="navbar-toggler collapsed  position-absolute bottom-0 start-0 m-3" type="button"
                     data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="#navbarNav"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -111,47 +117,71 @@
 
                     </div>
                 </div>
+            </div>
+        </div>
 
-                <h1></h1>
-                <div id="welcomeMessage"></div>
-                <div class="container-fluid bg-dark p-4 mt-5" id="profileContainer" style="color: orange;">
-                    <div class="row">
-                        <div class="col pt-5">
-                            <img class="img-fluid rounded-circle mx-auto d-block" alt="" style="width: 200px">
-                        </div>
 
-                        <div class="col-4 text-light m-2 p-5">
-                            <div class="col-4 p-2 mb-2">
-                                <h3></h3>
-                            </div>
-                            <div class="col-4 p-2 mb-2">
-                                <h6></h6>
-                            </div>
-                        </div>
+        <div id="welcomeMessage"></div>
+        <div class="container-fluid bg-dark p-4 mt-5" id="profileContainer" style="color: orange;">
+            <div class="row">
+                <div class="col pt-5">
+                    <img class="img-fluid rounded-circle mx-auto d-block" alt="" style="width: 200px">
+                </div>
+
+                <div class="col-4 text-light m-2 p-5">
+                    <div class="col-4 p-2 mb-2">
+                        <h3></h3>
                     </div>
-
-
-
-                    <div class="col-4"> </div>
+                    <div class="col-4 p-2 mb-2">
+                        <h6></h6>
+                    </div>
                 </div>
             </div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container">
-                    <div class="collapse navbar-collapse" id="scroll-nav">
-                        <ul class="navbar-nav" id="navbar">
-                            <li class="nav-item-scroll">
-                                <a class="nav-link" href="#my-auctions">My auctions</a>
-                            </li>
-                            <li class="nav-item-scroll">
-                                <a class="nav-link" href="#my-bids">My bids</a>
-                            </li>
-                            <li class="nav-item-scroll">
-                                <a class="nav-link" href="#my-favs">My favourites</a>
-                            </li>
-                        </ul>
+
+            <div class="container-fluid bg-dark p-2 mt-5" id="myContainer" style="color: orange;">
+                <div class="row">
+                    <div class="col pt-5">
+
                     </div>
 
-            </nav>
+                    <div class="col-4 text-light m-2 p-5">
+                        <div class="col-4 p-2 mb-2">
+
+                        </div>
+                        <div class="col-4 p-2 mb-2">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="container-fluid bg-dark p-2 mt-5" id="myContainer" style="color: orange;">
+                <div class="row">
+                    <div class="col pt-5"></div>
+                </div>
+            </div>
+            <div class="container-md pt-5 mt-5">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light mt-5 p-4">
+                    <div class="container">
+                        <div class="collapse navbar-collapse" id="scroll-nav">
+                            <ul class="navbar-nav" id="navbar">
+                                <li class="nav-item-scroll">
+                                    <a class="nav-link" href="#my-auctions">My auctions</a>
+                                </li>
+                                <li class="nav-item-scroll">
+                                    <a class="nav-link" href="#my-bids">My bids</a>
+                                </li>
+                                <li class="nav-item-scroll">
+                                    <a class="nav-link" href="#my-favs">My favourites</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
             <a class="btn btn-dark m-5 d-none d-md-block position-absolute top-0 end-0" href="#myModal"
                 role="button">New
                 auction</a>
