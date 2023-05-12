@@ -32,7 +32,7 @@ form.addEventListener('submit', async (event) => {
         const username = profile.name;
 
         const container = document.createElement('div');
-        container.setAttribute('id', 'profileContainer');
+        container.setAttribute('id', 'Container');
         
         const userEl = document.createElement('h1');
         userEl.textContent = `${username}`;
