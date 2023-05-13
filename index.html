@@ -24,10 +24,11 @@
 
 <body data-bs-spy="scroll" data-bs-target="#navbar">
     <header>
-        <nav class="navbar navbar-expand-sm fixed-top navbar-light bg-light">
-            <div class="container-fluid flex-column">
-                <div class="col">
-                    <a class="navbar-brand mx-auto d-md-none" href="index.html">
+        <nav class=" container-fluid navbar navbar-expand-sm fixed-top navbar-light bg-light">
+            <div class="row flex-column">
+                <div class="col-12">
+                    <a class="navbar-brand d-flex position-absolute top-10 start-50 translate-middle-x d-md-none"
+                        href="index.html">
                         <img src="/assets/img/Logo_1.jpg" alt="Logo of EasyBid" style="width: 100px;">
                     </a>
                 </div>
@@ -36,75 +37,123 @@
                         <img src="/assets/img/Logo_1.jpg" alt="Logo of EasyBid" style="width: 250px;">
                     </a>
                 </div>
-                <div class="col-12 border-top border-bottom border-dark d-none d-sm-block">
-                    <ul class="navbar-nav mx-5">
-                        <li class="nav-item p-2 border-end border-start border-dark">
-                            <a class="navbar-link active" aria-current="page" href="index.html">Home</a>
 
-                        </li>
 
-                        <li class="nav-item p-2 border-end border-dark">
-                            <a class="navbar-link" href="auction.html">All auctions</a>
+                <ul class="navbar-nav d-none d-md-flex mx-3">
+                    <li class="nav-item col-1 p-3 m-2 border-end border-start border-dark">
+                        <a class="navbar-link active" aria-current="page" href="index.html">Home</a>
+
+                    </li>
+
+                    <li class="nav-item col-1 p-3  m-2 mx-auto border-end border-dark">
+                        <a class="navbar-link" href="auction.html">All auctions</a>
+                    </li>
+                    <li class="nav-item  col-1 p-3  m-2 border-end border-dark">
+                        <a class="navbar-link" href="featured.html">Featured</a>
+                    </li>
+                    <li class="nav-item  col-1 p-3  m-2 border-end border-dark">
+                        <a class="navbar-link" href="new-auctions.html">Newly added</a>
+                    </li>
+                    <li class="nav-item  col-1 p-3  m-2 border-end border-dark">
+                        <a class="navbar-link" href="last-call.html">Last call</a>
+                    </li>
+                    <li class="nav-item  col-4 col-lg-6 p-3 m-2">
+                        <form class=" mx-auto d-flex" id="footer-search">
+                            <input class="form-control mx-auto rounded-pill" type="Search" placeholder="Search"
+                                aria-label="Search">
+                            <a href="/search.html" type="button" class="btn btn-dark text-light"><span
+                                    class="fa fa-search"></span>Search</a>
+                        </form>
+
+                    </li>
+                    <li class="nav-item dropdown  col-2 p-3  border-start border-end border-dark">
+                        <a class="navbar-link nav-link dropdown-toggle" href="#" d="navbarDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">My profile</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li> <a class="dropdown-item" href="/profile.html">My profile </a>
+                            </li>
+                            <li> <a class="dropdown-item" href="/login.html">Log in </a></li>
+                            <li> <a class="dropdown-item" role="button" id="logout">Log out </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item col-2 ">
+                        <a type="button" class="btn btn-outline-dark m-5 d-none d-md-flex position-absolute top-9 end-0"
+                            data-bs-toggle="modal" href="#ModalToggle">Sign up</a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+
+            <div class="navbar m-2 d-flex d-md-none position-absolute top-0 start-0">
+                <li class="nav-item dropdown">
+                    <button class="navbar-link nav-link dropdown-toggle btn d-md-none " href="#"
+                        d="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i
+                            class="bi bi-person-circle"></i></button>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li> <a class="dropdown-item" href="/profile.html">My profile </a>
                         </li>
-                        <li class="nav-item  p-2 border-end border-dark">
-                            <a class="navbar-link" href="featured.html">Featured</a>
-                        </li>
-                        <li class="nav-item  p-2 border-end border-dark">
-                            <a class="navbar-link" href="new-auctions.html">Newly added</a>
-                        </li>
-                        <li class="nav-item  p-2 border-end border-dark">
-                            <a class="navbar-link" href="last-call.html">Last call</a>
-                        </li>
-                        <li class="nav-item p-2 border-end border-dark">
-                            <a class="navbar-link" href="profile.html">My profile</a>
+                        <li> <a class="dropdown-item" href="/login.html">Log in </a></li>
+                        <li> <a class="dropdown-item" role="button" id="logout">Log out </a>
                         </li>
                     </ul>
+                </li>
 
-                </div>
 
-                <a class="ban ban-dark m-5 d-none d-md-block position-absolute top-9 end-0" data-bs-toggle="modal"
-                    href="#ModalToggle" role="button">sign up </a>
-                <a class="ban ban-dark m-5 d-none d-md-block" role="button" id="logout">log out </a>
 
-                <div class="col m-2 d-flex d-md-none position-absolute top-0 end-0">
-                    <button class="btn d-md-none " href="#modal"><i class="bi bi-person-circle"></i></button>
-
-                </div>
-                <button class="navbar-toggler collapsed  position-absolute bottom-0 start-0 m-3" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="#navbarNav"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="toggler-icon top-bar"></span>
-                    <span class="toggler-icon middle-bar"></span>
-                    <span class="toggler-icon bottom-bar"></span>
-                </button>
-
-                <div class="container-md collapse navbar-collapse flex-column justify-content-around" id="navbarNav">
+            </div>
+            <div class="collapse mx-auto" id="navbarToggleExternalContent">
+                <div class="bg-light p-4 pb-5">
                     <ul class="navbar-nav d-md-none">
-                        <li class="nav-item p-2 mx-auto mt-4 mb-2 border border-dark button-animation">
-                            <a class="navbar-link active" aria-current="page" href="index_2.html">Home</a>
+                        <li class="nav-item p-2 mx-auto mt-4 mb-3 border border-dark button-animation">
+                            <a class="navbar-link active" aria-current="page" href="index.html">Home</a>
                         </li>
-                        <li class="nav-item p-2 mx-auto mb-2 border border-dark">
-                            <a class="navbar-link" href="#ModalToggle">Log in/ Register</a>
-                        </li>
-                        <li class="nav-item p-2 mx-auto mb-2  border border-dark">
+                        <li class="nav-item p-2 mx-auto mb-3 border border-dark">
                             <a class=" navbar-link" href="auction.html">All auctions</a>
                         </li>
-                        <li class="nav-item p-2 mx-auto  mb-2 border border-dark">
+                        <li class="nav-item p-2 mx-auto  mb-3 border border-dark">
                             <a class=" navbar-link" href="featured.html">Featured</a>
                         </li>
-                        <li class="nav-item p-2 mx-auto  mb-2 border border-dark">
+                        <li class="nav-item p-2 mx-auto  mb-3 border border-dark">
                             <a class=" navbar-link" href="new-auctions.html">Newly added</a>
                         </li>
-                        <li class="nav-item p-2 mx-auto  mb-2 border border-dark">
+                        <li class="nav-item p-2 mx-auto  mb-3 border border-dark">
                             <a class=" navbar-link" href="last-call.html">Last call</a>
                         </li>
                     </ul>
+                    <div>
+                        <form class=" mx-auto d-flex d-md-none mb-4 mt-5" id="">
+                            <input class="form-control mx-auto rounded-pill" type="Search" placeholder="Search"
+                                aria-label="Search">
+                            <a href="/search.html" type="button" class="btn btn-dark text-light"><span
+                                    class="fa fa-search"></span>Search</a>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+            <nav class="navbar navbar-light bg-light position-absolute top-0 end-0 d-md-none">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
         </nav>
+
+
+
     </header>
 
     <main>
-        <h1>Hi there</h1>
-        <div class="container-fluid bg-dark p-2 mt-5" style="color: orange;">
+
+        <div class="container-fluid d-none d-md-flex bg-dark p-2 mt-5" style="color: orange;">
             <div class="row">
                 <div class="col pt-5">
                     <template id="reactionButton">
@@ -128,11 +177,8 @@
                 <div class="col-4"> </div>
             </div>
         </div>
-        <div class="container-sm ">
 
-
-        </div>
-        <div class="container-sm p-5 mt-5">
+        <div class="container-sm p-5 mt-3">
             <div class="row justify-content-md-center p-5 mt-5">
                 <div class="col-sm-12 col-md-6 p-5">
                     <p>Welcome to EasyBid!
@@ -143,16 +189,18 @@
                         or put your old treasures
                         out for auction.
 
-                        <a href="/">Sign up today</a> and get your 1000 points
+                        <a data-bs-toggle="modal" href="#ModalToggle">Sign up today</a> and get your 1000 points
                         starter credit.
                     </p>
-                    <button type="button" href="#modal" class="btn btn-dark m-5 d-flex position top-50 end-50"
-                        data-bs-toggle="modal" data-bs-target="#sign-up-Modal">
-                        See all auctions</button>
+                    <div class="col-4">
+                        <a type="button" href="/auction.html" class="btn btn-dark d-flex position top-50 end-50">
+                            See all auctions</a>
+                    </div>
                 </div>
                 <div class="col-sm-12 col-md-6 p-3">
                     <img src="/assets/img/intro_img.jpg" alt="shoes" style="width: 300px">
                 </div>
+
             </div>
         </div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -193,59 +241,20 @@
                 <div class="row justify-content-around">
                     <div class="column mb-3 mt-5">
                         <h3>Featured</h3>
-                    </div>
-                    <div class="col-3 bg-dark text-light m-2 p-5">
-                        <p>Blablaba</p>
 
                     </div>
-                    <div class="col-3 bg-dark text-light m-2">
-
-                    </div>
-                    <div class="col-3 bg-dark text-light m-2">
-
-                    </div>
-
                 </div>
-                <div class="row justify-content-around">
-                    <div class="column">
-
-                    </div>
-                    <div class="col-3 bg-dark text-light m-2 p-5">
-                        <p>Blablaba</p>
-
-                    </div>
-                    <div class="col-3 bg-dark text-light m-2">
-
-                    </div>
-                    <div class="col-3 bg-dark text-light m-2">
-
-                    </div>
-
-                </div>
-                <div class="row justify-content-around">
-                    <div class="column">
-
-                    </div>
-                    <div class="col-3 bg-dark text-light m-1 p-5">
-                        <p>Blablaba</p>
-
-                    </div>
-                    <div class="col-3 bg-dark text-light m-1">
-
-                    </div>
-                    <div class="col-3 bg-dark text-light m-1">
-
-                    </div>
-                    <div class="col-12 post-button">
-                        <button type="button" href="#modal" id="log-in-Modal"
-                            class="btn btn-outline-dark m-5 d-none d-md-block position-absolute top-0 end-0"
-                            data-bs-toggle="modal" data-bs-target="#log-in-Modal" style="color: orange">
-                            New auction</button>
-                    </div>
-
-                </div>
-
             </div>
+            <div class="col-12 post-button">
+                <button type="button" href="#modal" id="log-in-Modal"
+                    class="btn btn-outline-dark m-5 d-none d-md-block position-absolute top-0 end-0"
+                    data-bs-toggle="modal" data-bs-target="#log-in-Modal" style="color: orange">
+                    New auction</button>
+            </div>
+
+        </div>
+
+        </div>
 
 
         </div>
@@ -360,12 +369,7 @@
                 <a class="col-3 px-5 navbar-brand" id="footer-logo" href="index.html">
                     <img src="/assets/img/Logo_1.jpg" alt="" style="width:100px;">
                 </a>
-                <form class="col-lg-5 mx-auto d-flex navbar-link" id="footer-search">
-                    <input class="form-control mx-auto rounded-pill" type="Search" placeholder="Search"
-                        aria-label="Search">
-                    <a href="/search.html" type="button" class="btn btn-dark text-light"><span
-                            class="fa fa-search"></span>Search</a>
-                </form>
+
                 <div class="col-12 d-sm-flex mx-auto p-3" id="footer-copy">
                     <p>@EasyBid copyright 2023</p>
                 </div>
