@@ -21,11 +21,20 @@ nav a {
   }
 
   .search-result {
-    max-width:100%;
-    min-height: 200px;
-    padding: 5px;
-    margin: 10px;
-    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    gap: 20px;
+    background-color: whitesmoke;
+    padding: 30px;
+    margin-top: 60px;
+    margin-bottom: 3rem;
+    animation-name: fade;
+    animation-duration: 1.5s;
   }
 
   .auction-card {
@@ -88,5 +97,3 @@ nav a {
   display: inline-block;
    margin: 0 auto;
    }
-}
-

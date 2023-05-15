@@ -1,7 +1,7 @@
 # Semester-project-2 for Mokki78
 <h1><color: red>Description</h1>
 
-<p><b>This is the result of my Semester Project 2 for FED year two at Noroff Vocational School.<b>
+<p><b>This is the result of my Semester Project 2 for FED year two at Noroff Vocational School.</b>
 The assignment we got was to design and develop an auction site using Noroff.dev api, Bootstrap 5 and vanilla Javascript.
  Before developing we were tasked to make a design style, prototype and trello board and kalender to plan the project well ahead of starting the developing.
 
