@@ -1,5 +1,5 @@
-# Semester-project-2
-<h1>Description</h1>
+# Semester-project-2 for Mokki78
+<h1><color: red>Description</h1>
 
 <p><b>This is the result of my Semester Project 2 for FED year two at Noroff Vocational School.<b>
 The assignment we got was to design and develop an auction site using Noroff.dev api, Bootstrap 5 and vanilla Javascript.
@@ -26,16 +26,22 @@ To contribute please make a forked repo from the main.</p>
 <li>Clone the repo:</li>
 
 <li> Install the dependecies:</li>
+</ol>
+
 <p>For this assignment the dependencies Prettier and ESLint is installed. To install these for your own project bla bla bla</p>
+
+
 
 <h3>Contact</h3>
 <p>If you would like to contact me you can reach me here:
 
 https://www.linkedin.com/in/monika-sæle-2a80918a/</p>
 
+
 <h3>License</h3>
 
 <p>MIT License</p>
+
 
 <h3>Acknowlegdments</h3>
 
