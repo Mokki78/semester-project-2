@@ -34,8 +34,10 @@ async function fetchSearchContent() {
 
             const listingElement = document.createElement('div');
             listingElement.innerHTML = `
-              <h1>${listing.title}</h1>
-              <img src="${listing.media}" alt="Listing Image">
+              <div class="auction-card">
+              <div class="auction-image"><img src="${listing.media}" alt="Listing Image"></div>
+             <div class="auction-text"><div class="auction-title"><h1>${listing.title}</h1></div>
+              <div class="auction-bids"><h3>Number of bids so far: ${listing._count.bids}</h3></div></div>
             `;
 
             searchContainer.appendChild(listingElement);
