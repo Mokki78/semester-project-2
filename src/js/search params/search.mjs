@@ -1,25 +1,51 @@
+ import { API_BASE_URL} from "../api/constants/apiBase.mjs";
+ import { headers } from "../api/constants/headers.mjs";
 
-document.getElementById("search-content").addEventListener("click", search);
 
-function search() {
-    var searchTerm = document.getElementById('search-input').value;
-    fetch('https://api.noroff.dev/api/v1/auction/listings?search=' + searchTerm)
-      .then(function(response) {
-        return response.json();
-      })
-      .then(function(data) {
-        // Handle search results
-        const results = data.data;
-        const resultsContainer = document.getElementById('search-content');
-        resultsContainer.innerHTML = '';
-        for (let i = 0; i < results.length; i++) {
-        const result = results[i];
-        const  resultElement = document.createElement('div');
-          resultElement.innerHTML = `<div class="auction-card"><h4>${result.title}</h4><p>${result.description}</p><img>${result.media}</img></div>`;
-          resultsContainer.appendChild(resultElement);
-        }
-      })
-      .catch(function(error) {
-        console.error('Error fetching search results:', error);
+async function fetchSearchContent() {
+  try {
+    const headersObject = headers();
+    const response = await fetch(`${API_BASE_URL}/auction/listings`, { headers: headersObject });
+
+    if (response.ok) {
+      const listings = await response.json();
+
+      const searchInput = document.querySelector('.search-options').value.toLowerCase();
+
+      const filteredListings = listings.filter(listing => {
+        const { title, description } = listing;
+        return title.toLowerCase().includes(searchInput) || description.toLowerCase().includes(searchInput);
       });
+
+      const searchContainer = document.querySelector("#search-content");
+      searchContainer.innerHTML = '';
+
+      if (filteredListings.length === 0) {
+        profileContainer.innerHTML = 'No matching auction found.';
+      } else {
+        filteredListings.forEach(listing => {
+          const { title, media } = listing;
+
+          const listingElement = document.createElement('div');
+          listingElement.innerHTML = `
+            <h1>${title}</h1>
+            <img src="${media}" alt="Listing Image">
+          `;
+
+          searchContainer.appendChild(listingElement);
+        });
+      }
+    } else {
+      throw new Error(response.statusText);
+    }
+  } catch (error) {
+    console.error('Error fetching listings:', error);
+    throw error;
   }
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  fetchSearchContent() ;
+});
+
+}

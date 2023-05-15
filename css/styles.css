@@ -61,6 +61,18 @@ nav a {
     }
   }
 
+  #listing-card {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: auto;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
+    border: 2px solid white;
+    opacity: 1;
+  }
+  
  
 
  @media screen and (max-width: 800px) {

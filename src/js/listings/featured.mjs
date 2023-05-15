@@ -3,10 +3,10 @@ import { API_BASE_URL } from "../api/constants/apiBase.mjs";
 import { headers } from "../api/constants/headers.mjs";
 
 
-export async function fetchListings() {
+async function fetchListings() {
     try {
       const headersObject = headers();
-      const response = await fetch(`${API_BASE_URL}/auction/listings`, { headers: headersObject });
+      const response = await fetch(`${API_BASE_URL}/auction/listing`, { headers: headersObject });
   
       if (response.ok) {
         const listings = await response.json();

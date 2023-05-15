@@ -42,11 +42,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 export async function profileData() {
   try {
-    const queryString = document.location.search;
-    const params = new URLSearchParams(queryString);
-    const name = params.get("name");
-    
-    const accessToken = localStorage.getItem("token");
+    let params = new URL(document.location).searchParams;
+    let name = params.get("name"); 
+     const accessToken = localStorage.getItem("token");
 
     const response = await fetch(`${API_BASE_URL}/auction/profiles/${name}`, {
       headers: {
@@ -56,14 +54,14 @@ export async function profileData() {
     });
 
     if (response.ok) {
-      const profile = await response.json();
+      let currentUser = await response.json();
 
       const { name, credit, avatar } = profile;
       const profileContainer = document.getElementById('myContainer');
       profileContainer.innerHTML = `
-        <h1>${name}</h1>
-        <p>Your current credit is: ${credit}</p>
-        <img src="${avatar}" alt="Avatar">
+        <h1>${currentUser.name}</h1>
+        <p>Your current credit is: ${currentUser._count.credit}</p>
+        <img src="${currentUser.media}" alt="Avatar">
       `;
     } else {
       throw new Error(response.statusText);

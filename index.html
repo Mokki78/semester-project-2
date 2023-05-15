@@ -15,7 +15,8 @@
     <script src="/src/js/api/auth/index.mjs" type="module" defer></script>
     <script src="/src/js/api/auth/index.mjs" type="module" defer></script>
     <script src="/src/js/listings/fetchListings.mjs" type="module" defer></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/src/js/search params/search.mjs" type="module" defer></script>
+
 
 
 
@@ -58,7 +59,7 @@
                         <a class="navbar-link" href="last-call.html">Last call</a>
                     </li>
                     <li class="nav-item  col-4 col-lg-6 p-3 m-2">
-                        <form class=" mx-auto d-flex" id="footer-search">
+                        <form class=" mx-auto d-flex search-options">
                             <input class="form-control mx-auto rounded-pill" type="Search" placeholder="Search"
                                 aria-label="Search">
                             <a href="/search.html" type="button" class="btn btn-dark text-light"><span
@@ -125,7 +126,7 @@
                         </li>
                     </ul>
                     <div>
-                        <form class=" mx-auto d-flex d-md-none mb-4 mt-5" id="">
+                        <form class=" mx-auto d-flex d-md-none mb-4 mt-5 earch-option">
                             <input class="form-control mx-auto rounded-pill" type="Search" placeholder="Search"
                                 aria-label="Search">
                             <a href="/search.html" type="button" class="btn btn-dark text-light"><span
@@ -177,7 +178,6 @@
                 <div class="col-4"> </div>
             </div>
         </div>
-
         <div class="container-sm p-5 mt-3">
             <div class="row justify-content-md-center p-5 mt-5">
                 <div class="col-sm-12 col-md-6 p-5">
@@ -220,9 +220,19 @@
                 </div>
 
         </nav>
-        <div class="container-sm pt-4" id="listingContainer">
-            <div class="row justify-content-around">
-                <div class="column mb-3 mt-5">
+        <div class="container" id="search-content">
+            <div class="row">
+                <div class="col-12">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container-sm pt-4 text-white bg-dark" id="listingContainer">
+            <div class="row d-flex flex-column">
+                <div class="col-6 mb-3 mt-5" id="listing-card">
                     <h3>Featured</h3>
                 </div>
                 <div class="col-3 bg-dark text-light m-2 p-5">
@@ -237,6 +247,7 @@
                 </div>
 
             </div>
+
             <div class="container-sm pt-4">
                 <div class="row justify-content-around">
                     <div class="column mb-3 mt-5">
@@ -258,6 +269,7 @@
 
 
         </div>
+
         <div class="container-sm p-4" id="newly-added">
             <div class="row justify-content-around">
                 <div class="column mb-3 mt-5">
