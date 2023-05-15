@@ -13,6 +13,10 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <script src="/src/js/api/auth/index.mjs" type="module" defer></script>
+    <script src="/src/js/api/constants/apiBase.mjs" type="module" defer></script>
+    <script src="/src/js/api/constants/headers.mjs" type="module" defer></script>
+    <script src="/src/js/api/localStorage/load.mjs" type="module" defer></script>
+
     <script src="/src/js/fetch-profile/profile.mjs" type="module" defer></script>
     <script src="/src/js/api/auth/logout.mjs" type="module" defer></script>
 
@@ -160,8 +164,8 @@
         </div>
 
 
-        <div id="welcomeMessage"></div>
-        <div class="container-fluid bg-dark p-4 mt-5" id="profileContainer" style="color: orange;">
+
+        <div class="container-fluid bg-dark p-4 mt-5" id="myContainer" style="color: orange;">
             <div class="row">
                 <div class="col pt-5">
                     <img class="img-fluid rounded-circle mx-auto d-block" alt="" style="width: 200px">
@@ -177,30 +181,6 @@
                 </div>
             </div>
 
-            <div class="container-fluid bg-dark p-2 mt-5" id="myContainer" style="color: orange;">
-                <div class="row">
-                    <div class="col pt-5">
-
-                    </div>
-
-                    <div class="col-4 text-light m-2 p-5">
-                        <div class="col-4 p-2 mb-2">
-
-                        </div>
-                        <div class="col-4 p-2 mb-2">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="container-fluid bg-dark p-2 mt-5" id="myContainer" style="color: orange;">
-                <div class="row">
-                    <div class="col pt-5"></div>
-                </div>
-            </div>
             <div class="container-md pt-5 mt-5">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light mt-5 p-4">
                     <div class="container">
@@ -307,7 +287,7 @@
 
                 </div>
                 <div class="col-12 post-button">
-                    <button type="button" href="#modal" id="log-in-Modal"
+                    <button type="button" href="#modal"
                         class="btn btn-outline-dark m-5 d-none d-md-block position-absolute top-0 end-0"
                         data-bs-toggle="modal" data-bs-target="#log-in-Modal" style="color: orange">
                         New auction</button>

@@ -19,13 +19,11 @@ export async function fetchListings() {
   
           const listingElement = document.createElement('div');
           listingElement.innerHTML = `
-            <h1>${listing.title}</h1>
+           <div id="listing-card"> <h1>${listing.title}</h1>
              <img src="${listing.media}" alt="Listing Image">
             <div><p>Description: : ${listing.description}</p></div>
-            <div><p>Date created: ${listing.created}</p></div>
-            <div><p>Date updated: ${listing.updated}</p></div>
             <div><p>Date ending: ${listing.endsAt}</p></div>
-            <div><p>Bids on product: ${listing._count.bids}</p></div>
+            <div><p>Bids on product: ${listing._count.bids}</p></div></div>
            
           `;
   

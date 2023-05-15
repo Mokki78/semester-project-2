@@ -4,10 +4,9 @@ import { save } from "../localStorage/save.mjs";
 
 const form = document.querySelector('#logInForm');
 
-
-
 form.addEventListener('submit', async (event) => {
   event.preventDefault();
+
 
   const email = form.loginEmail.value;
   const password = form.loginPassword.value;
