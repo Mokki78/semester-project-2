@@ -8,7 +8,7 @@ export async function profileData() {
   try {
     const token = localStorage.getItem('token');
 
-    const response = await fetch(`${API_BASE_URL}/auction/profiles/me`, {
+    const response = await fetch(`${API_BASE_URL}/auction/profiles/?name=`, {
       headers: {
         ...headers(),
         Authorization: `Bearer ${token}`,
@@ -21,9 +21,9 @@ export async function profileData() {
       const { name, credit, avatar } = currentUser;
       const profileContainer = document.getElementById('myContainer');
       profileContainer.innerHTML = `
-        <div class="auction-card"><h1>${name}</h1>
-        <p>Your current credit is: ${credit}</p>
-        <img src="${avatar}" alt="Avatar"></div>
+        <div class="auction-card"><h1>${currentUser.name}</h1>
+        <p>Your current credit is: ${currentUser._count.credit}</p>
+        <img src="${currentUser.avatar}" alt="Avatar"></div>
       `;
     } else {
       throw new Error(response.statusText);
