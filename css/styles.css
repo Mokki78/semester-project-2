@@ -101,6 +101,30 @@ nav a {
     color: black;
   }
   
+
+  #oneListing {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    gap: 70px;
+    background-color: whitesmoke;
+    margin-top: 60px;
+    margin-bottom: 3rem;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
   
  
 
