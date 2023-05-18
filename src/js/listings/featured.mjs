@@ -1,45 +1,17 @@
 
-import { API_BASE_URL } from "../api/constants/apiBase.mjs";
-import { headers } from "../api/constants/headers.mjs";
+const listings = [
+  { image: 'image1.jpg', title: 'Listing 1', description: 'Description 1' },
+  { image: 'image2.jpg', title: 'Listing 2', description: 'Description 2' },
+  // ...
+];
 
+// Generate the links for each listing
+listings.forEach((listing) => {
+  const link = document.createElement('a');
+  link.href = `listing.html?image=${encodeURIComponent(listing.image)}&title=${encodeURIComponent(listing.title)}&description=${encodeURIComponent(listing.description)}`;
+  link.textContent = listing.title;
 
-async function fetchListings() {
-    try {
-      const headersObject = headers();
-      const response = await fetch(`${API_BASE_URL}/auction/listing`, { headers: headersObject });
-  
-      if (response.ok) {
-        const listings = await response.json();
-  
-        const profileContainer = document.getElementById('listingContainer');
-        profileContainer.innerHTML = '';
-  
-        for (const listing of listings) {
-          const { title, media } = listing;
-  
-          const listingElement = document.createElement('div');
-          listingElement.innerHTML = `
-            <h1>${listing.title}</h1>
-             <img src="${listing.media}" alt="Listing Image">
-            <div><p>Description: : ${listing.description}</p></div>
-            <div><p>Date created: ${listing.created}</p></div>
-            <div><p>Date updated: ${listing.updated}</p></div>
-            <div><p>Date ending: ${listing.endsAt}</p></div>
-            <div><p>Bids on product: ${listing._count.bids}</p></div>
-           
-          `;
-  
-          profileContainer.appendChild(listingElement);
-        }
-      } else {
-        throw new Error(response.statusText);
-      }
-    } catch (error) {
-      console.error('Error fetching listings:', error);
-      throw error;
-    }
-  }
-  
-  document.addEventListener('DOMContentLoaded', () => {
-    fetchListings();
-  });
+  // Append the link to the container element
+  const container = document.getElementById('listings-container');
+  container.appendChild(link);
+});
