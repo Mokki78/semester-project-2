@@ -28,11 +28,12 @@ singleListing();
 
 function createHtml(data) {
   detailContainer.innerHTML = `<div class="auction-card">
+    <img src="${data.media}" class="auction-media" alt="Listing Image">
+    <div class="auction-text">
     <div class="auction-title">${data.title}</div>
-    <img src="${data.media}" alt="Listing Image">
     <div class="auction-description">${data.description}</div> 
-    <div><p>Date ending: ${data.endsAt}</p></div>    
-    <div><p>Bids on product: ${data._count.bids}</p></div>
+    <div><p>Bids on product: ${data._count.bids}</p></div></div>
+    <div><p>Date ending: ${data.endsAt}</p></div>  
   </div>`;
 }
 
