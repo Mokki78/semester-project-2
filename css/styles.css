@@ -13,13 +13,32 @@ img {
     max-width: 100%
   }
 
+a {
+  color: black;
+  text-decoration: none;
+}
 
+a:hover {
+  color: orange;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
   
+link {
+  color: orange;
+}
+
+link:hover {
+  color: darkgrey;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
  
 
 .search-content {
-    display: flex;
-    flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+    
     margin-top: 100px;
     width: 80%;
     height: auto;
@@ -32,45 +51,9 @@ img {
     animation-duration: 1.5s;
   }
 
-  .auction-card {
-    display: flex;
-    
-    max-width: 80%;
-    margin: 0 auto;
-    flex-direction: row;
-    background-color: white;
-    color: black;
-  }
-
-  .auction-text {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .auction-title{
-    margin: 0 auto;
-    padding: 10px;
-  }
-
-  .auction-bids{
-    margin: 0 auto;
-
-  }
-
-  .auction-image {
-    min-width: 30%;
-  }
-
-  .auction-card:hover {
-    opacity: 0.5;
-    
-    
-
-  }
-
   #listingContainer {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
     margin-top: 100px;
     width: 80%;
     height: auto;
@@ -92,15 +75,106 @@ img {
     }
   }
 
-  #listing-card {
+  .auction-card {
     display: flex;
-     max-width: 80%;
+    width: 80%;
     margin: 0 auto;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
     background-color: white;
     color: black;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  .auction-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .auction-title{
+    display: flex;
+    padding: 10px;
+    font-family: "Mr Dafoe";
+    font-size: 2rem;
+    text-decoration: none;
+  }
+
+  .auction-bids{
+    margin: 0 auto;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12px;
+    text-decoration: none;
+   }
+
+  .auction-box {
+    display: flex;
+    flex-direction: row;
+  } 
+
+
+  .auction-description {
+    margin: 0 auto;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px;
+
+  }
+
+  .auction-image {
+     display: flex;
+     margin: 0 auto;
+     width: 80;
+    height: auto;
+    text-decoration: none;
+  }
+
+  .auction-card:hover {
+    opacity: 0.5;
+    
+  }
+
+  .card-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    text-decoration: none;
+    width: 80%;
+    text-decoration: none;
   }
   
+  .card-image {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: auto;
+    text-decoration: none;
+  }
+  
+  .card-text {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    text-decoration: none;
+    flex-direction: row;
+  }
+  
+  .card-title {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Mr Dafoe";
+    font-size: 3rem;
+    margin: 0 auto;
+  }
 
   #oneListing {
     display: flex;
@@ -109,8 +183,9 @@ img {
     width: 80%;
     height: auto;
     margin: 0 auto;
+    padding: 2rem;
     gap: 70px;
-    background-color: whitesmoke;
+    background-color: black;
     margin-top: 60px;
     margin-bottom: 3rem;
     animation-name: fade;
@@ -124,6 +199,23 @@ img {
     to {
       opacity: 1;
     }
+  }
+
+  .card-content {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    color: black;
+    margin: 0 auto;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    animation-name: fade;
+    animation-duration: 1.5s;
   }
   
  
