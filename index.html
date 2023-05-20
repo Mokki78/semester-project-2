@@ -14,15 +14,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/css/styles.css">
     <script src="/src/js/api/auth/index.mjs" type="module" defer></script>
-
     <script src="/src/js/listings/fetchListings.mjs" type="module" defer></script>
     <script src="/src/js/search params/search.mjs" type="module" defer></script>
 
-
-
-
 </head>
-
 
 <body data-bs-spy="scroll" data-bs-target="#navbar">
     <header>
@@ -31,8 +26,7 @@
                 <div class="col-12">
                     <a class="navbar-brand d-flex d-md-none" href="index.html">
                         <img src="/assets/img/Logo_1.jpg" class="border border-dark" alt="Logo of EasyBid"
-                            style="width: 100px;">
-                    </a>
+                            style="width: 100px;"></a>
                 </div>
                 <div class="col-12">
                     <a class="navbar-brand d-none d-md-block" href="index.html">
@@ -40,14 +34,10 @@
                             style="width: 250px;">
                     </a>
                 </div>
-
-
                 <ul class="navbar-nav d-none d-md-flex mx-3">
                     <li class="nav-item col-1 p-3 m-2">
                         <a class="navbar-link active" aria-current="page" href="index.html">Home</a>
-
                     </li>
-
                     <li class="nav-item col-1 p-3  m-2 mx-auto">
                         <a class="navbar-link" href="auction.html">Auctions</a>
                     </li>
@@ -60,33 +50,21 @@
                             <li> <a class="dropdown-item" href="/login.html">Log in</a></li>
                             <li> <a class="dropdown-item" role="button" id="logout">Log out</a>
                             </li>
-                            <li class="nav-item  col-4 col-lg-6 p-3 m-2"> </li>
-
+                            <li class="nav-item  col-4 col-lg-6 p-3 m-2"></li>
                         </ul>
                     </li>
                     <li>
                         <form class="col-6 p-4 mx-4 d-flex">
-
                             <a href="/search.html" type="button" class="btn btn-outline-dark text-dark"><span
                                     class="fa fa-search"></span>Search</a>
                         </form>
                     </li>
-
                     <li class="nav-item col-2 ">
                         <a type="button" class="btn btn-outline-dark m-5 d-none d-md-flex position-absolute top-9 end-0"
                             data-bs-toggle="modal" href="#ModalToggle">Sign up</a>
                     </li>
-
                 </ul>
-
-
-
             </div>
-
-
-
-
-
             <div>
                 <a href="search.html"><i class="bi bi-search"></i></a>
             </div>
@@ -104,13 +82,7 @@
                         </li>
                     </ul>
                 </li>
-
             </div>
-
-
-
-
-
             <div class="collapse mx-auto m-2" id="navbarToggleExternalContent">
                 <div class="bg-light p-4 pb-5">
                     <ul class="navbar-nav d-md-none ">
@@ -126,7 +98,6 @@
                     </ul>
                 </div>
             </div>
-
             <nav class="navbar navbar-light bg-light position-absolute top-0 end-0 d-md-none">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -135,32 +106,20 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
-
             </nav>
-
         </nav>
-
-
-
-
-
     </header>
 
     <main>
-
-
-
         <div class="container-sm p-5 mt-3">
             <div class="row justify-content-md-center p-5 mt-5">
                 <div class="col-sm-12 col-md-6 p-5">
                     <p>Welcome to EasyBid!
-
                         This is an auctions site and you
                         can bid on whatever you would like to
                         find its way home to you,
                         or put your old treasures
                         out for auction.
-
                         <a data-bs-toggle="modal" href="#ModalToggle">Sign up today</a> and get your 1000 points
                         starter credit.
                     </p>
@@ -172,9 +131,9 @@
                 <div class="col-sm-12 col-md-6 p-3">
                     <img src="/assets/img/intro_img.jpg" alt="shoes" style="width: 300px">
                 </div>
-
             </div>
         </div>
+
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <div class="collapse navbar-collapse" id="scroll-nav">
@@ -190,75 +149,35 @@
                         </li>
                     </ul>
                 </div>
-
         </nav>
-        <div class="container" id="search-content">
-            <div class="row">
-                <div class="col-12">
-
-                </div>
-
-            </div>
-
-        </div>
-
         <div class="container-sm pt-4 text-white bg-dark" id="listingContainer">
             <div class="row d-flex flex-column">
                 <div class="col-6 mb-3 mt-5" id="listing-card">
                     <h3>Featured</h3>
-                </div>
-                <div class="col-3 bg-dark text-light m-2 p-5">
-                    <p>Blablaba</p>
+                    <div class="container-sm pt-4">
+                        <div class="row justify-content-around">
+                            <div class="column mb-3 mt-5">
+                                <h3>Featured</h3>
 
-                </div>
-                <div class="col-3 bg-dark text-light m-2">
-
-                </div>
-                <div class="col-3 bg-dark text-light m-2">
-
-                </div>
-
-            </div>
-
-            <div class="container-sm pt-4">
-                <div class="row justify-content-around">
-                    <div class="column mb-3 mt-5">
-                        <h3>Featured</h3>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 post-button">
-                <button type="button" href="#modal" id="log-in-Modal"
-                    class="btn btn-outline-dark m-5 d-none d-md-block position-absolute top-0 end-0"
-                    data-bs-toggle="modal" data-bs-target="#log-in-Modal" style="color: orange">
-                    New auction</button>
-            </div>
-
-        </div>
-
-        </div>
-
-
-        </div>
-
-        <div class="container-sm p-4" id="newly-added">
-            <div class="row justify-content-around">
-                <div class="column mb-3 mt-5">
-                    <h3>Newly added</h3>
-
-
-                </div>
-
-                <div class="container-sm p-4 pb-5" id="last-call">
-                    <div class="row justify-content-around">
-                        <div class="column mb-3 mt-5">
-                            <h3>Last call</h3>
-
-
-
-
+                            </div>
                         </div>
+
+                        <div class="container-sm p-4" id="newly-added">
+                            <div class="row justify-content-around">
+                                <div class="column mb-3 mt-5">
+                                    <h3>Newly added</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-sm p-4 pb-5" id="last-call">
+                            <div class="row justify-content-around">
+                                <div class="column mb-3 mt-5">
+                                    <h3>Last call</h3>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="modal fade" id="ModalToggle" aria-hidden="true" aria-labelledby="ModalToggleLabel"
                             tabindex="-1">
                             <div class="modal-dialog modal-lg">
@@ -277,11 +196,13 @@
 
                                             </div>
                                             <div class="mb-3">
-                                                <label for="registerEmail" class="form-label">Email address</label>
+                                                <label for="registerEmail" class="form-label">Email
+                                                    address</label>
                                                 <input required type="email" class="form-control" id="registerEmail"
                                                     pattern="[\w\-.]+@(stud.)?noroff.no$"
                                                     aria-describedby="registerEmail">
-                                                <div class="form-text">Must be a valid Noroff student or staff
+                                                <div class="form-text">Must be a valid Noroff student or
+                                                    staff
                                                     email.</div>
                                             </div>
                                             <div class="mb-3">
@@ -292,7 +213,8 @@
                                             <div class="mb-3">
                                                 <input type="url" class="form-control" id="registerAvatar" name="avatar"
                                                     placeholder="Avater URL"></input>
-                                                <label for="registerAvatar">Only images with valid URL will be
+                                                <label for="registerAvatar">Only images with valid URL
+                                                    will be
                                                     displayed</label>
 
                                             </div>
@@ -303,7 +225,8 @@
                                     <div class="modal-footer">
                                         <p>Are you already a member?</p>
                                         <button class="btn btn-dark" data-bs-target="#ModalToggle2"
-                                            data-bs-toggle="modal" data-bs-dismiss="modal">Log in</button>
+                                            data-bs-toggle="modal" data-bs-dismiss="modal">Log
+                                            in</button>
                                     </div>
                                 </div>
                             </div>
@@ -313,14 +236,16 @@
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalToggleLabel2">Log in</h5>
+                                        <h5 class="modal-title" id="exampleModalToggleLabel2">Log in
+                                        </h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
                                         <form id="logInForm">
                                             <div class="mb-3">
-                                                <label for="loginEmail" class="form-label">Email address</label>
+                                                <label for="loginEmail" class="form-label">Email
+                                                    address</label>
                                                 <input type="email" class="form-control" id="loginEmail"
                                                     aria-describedby="loginEmail">
                                                 <div id="loginEmail" class="form-text"></div>
