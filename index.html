@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="/css/styles.css">
     <script src="/src/js/api/auth/index.mjs" type="module" defer></script>
     <script src="/src/js/listings/fetchListings.mjs" type="module" defer></script>
-    <script src="/src/js/search params/search.mjs" type="module" defer></script>
+
 
 </head>
 
@@ -151,27 +151,30 @@
                 </div>
         </nav>
         <div class="container-sm pt-4 text-white bg-dark" id="listingContainer">
-            <div class="row d-flex flex-column">
-                <div class="col-6 mb-3 mt-5" id="listing-card">
-                    <h3>Featured</h3>
-                    <div class="container-sm pt-4">
-                        <div class="row justify-content-around">
-                            <div class="column mb-3 mt-5">
-                                <h3>Featured</h3>
+            <div class="row">
+                <div>
+                    <div class="col-12 mx-auto loader"></div>
+                    <div class="col-6 mb-3 mt-5" id="listing-card">
+                        <h3>Featured</h3>
+                        <div class="container-sm pt-4">
+                            <div class="row justify-content-around" id="featured">
+                                <div class="column mb-3 mt-5">
+                                    <h3>Featured</h3>
 
+                                </div>
                             </div>
                         </div>
 
-                        <div class="container-sm p-4" id="newly-added">
-                            <div class="row justify-content-around">
+                        <div class="container-sm p-4">
+                            <div class="row justify-content-around" id="newly-added">
                                 <div class="column mb-3 mt-5">
                                     <h3>Newly added</h3>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="container-sm p-4 pb-5" id="last-call">
-                            <div class="row justify-content-around">
+                        <div class="container-sm p-4 pb-5">
+                            <div class="row justify-content-around" id="last-call">
                                 <div class="column mb-3 mt-5">
                                     <h3>Last call</h3>
                                 </div>
@@ -196,13 +199,11 @@
 
                                             </div>
                                             <div class="mb-3">
-                                                <label for="registerEmail" class="form-label">Email
-                                                    address</label>
+                                                <label for="registerEmail" class="form-label">Email address</label>
                                                 <input required type="email" class="form-control" id="registerEmail"
                                                     pattern="[\w\-.]+@(stud.)?noroff.no$"
                                                     aria-describedby="registerEmail">
-                                                <div class="form-text">Must be a valid Noroff student or
-                                                    staff
+                                                <div class="form-text">Must be a valid Noroff student or staff
                                                     email.</div>
                                             </div>
                                             <div class="mb-3">
@@ -213,10 +214,8 @@
                                             <div class="mb-3">
                                                 <input type="url" class="form-control" id="registerAvatar" name="avatar"
                                                     placeholder="Avater URL"></input>
-                                                <label for="registerAvatar">Only images with valid URL
-                                                    will be
+                                                <label for="registerAvatar">Only images with valid URL will be
                                                     displayed</label>
-
                                             </div>
 
                                             <button type="submit" class="btn btn-dark">Submit</button>
@@ -225,8 +224,7 @@
                                     <div class="modal-footer">
                                         <p>Are you already a member?</p>
                                         <button class="btn btn-dark" data-bs-target="#ModalToggle2"
-                                            data-bs-toggle="modal" data-bs-dismiss="modal">Log
-                                            in</button>
+                                            data-bs-toggle="modal" data-bs-dismiss="modal">Log in</button>
                                     </div>
                                 </div>
                             </div>
@@ -236,16 +234,14 @@
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalToggleLabel2">Log in
-                                        </h5>
+                                        <h5 class="modal-title" id="exampleModalToggleLabel2">Log in</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
                                         <form id="logInForm">
                                             <div class="mb-3">
-                                                <label for="loginEmail" class="form-label">Email
-                                                    address</label>
+                                                <label for="loginEmail" class="form-label">Email address</label>
                                                 <input type="email" class="form-control" id="loginEmail"
                                                     aria-describedby="loginEmail">
                                                 <div id="loginEmail" class="form-text"></div>
@@ -266,6 +262,8 @@
                                 </div>
                             </div>
                         </div>
+
+
 
 
 
