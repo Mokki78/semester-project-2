@@ -29,6 +29,32 @@ function createHtml(details) {
                 <div class="card-text">"${details.content.rendered}"</div>`;
 }
 
+/auction/listings
+
+{
+  "title": "string", // Required
+  "description": "string", // Optional
+  "tags": ["string"], // Optional
+  "media": ["https://url.com/image.jpg"], // Optional
+  "endsAt": "2020-01-01T00:00:00.000Z" // Required - Instance of new Date()
+}
 
 
 
+{
+  "id": "string",
+  "title": "string",
+  "description": "string",
+  "tags": ["string"],
+  "media": ["https://url.com/image.jpg"],
+  "created": "2020-01-01T00:00:00.000Z",
+  "updated": "2020-01-01T00:00:00.000Z",
+  "endsAt": "2020-01-01T00:00:00.000Z",
+  "_count": {
+    "bids": 0
+  }
+}
+
+DELETE/auction/listings/<id></id>
+
+deletes and returns nothing

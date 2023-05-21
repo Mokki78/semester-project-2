@@ -1,14 +1,19 @@
-const currentProfile = async(req, res) => {
-    const ({ email, password}) = req.body;
+const currentProfile = () => {
+  // Retrieve the profile information from localStorage
+  const profileData = JSON.parse(localStorage.getItem('profile'));
 
-    const profile = await profile.findOne({email});
+  if (profileData) {
+    const { name, avatar, credits } = profileData;
 
-    if(profile && (await profile.matchPassword)) {
-        res.json({
-            name: profile.name,
-            email: profile.email,
-            avatar: profile.avatar,
-            
-        })
-    }
-}
+    const profileContainer = document.getElementById('myContainer');
+    profileContainer.innerHTML = `
+        <div class="auction-card"><h1>${name}</h1>
+        <p>Your current credit is: ${credits}</p>
+        <img src="${avatar}" alt="Avatar"></div>
+      `;
+  } else {
+    console.log('Profile not found');
+  }
+};
+
+currentProfile();
