@@ -1,7 +1,7 @@
-import { remove } from "../localStorage/delete.mjs";
+const leave = document.querySelector('#logout');
 
-const leave = document.querySelector("#logout");
-
-leave.addEventListener("click", () => {alert("Your logged out")
-localStorage.removeItem("accessToken"),
-window.location.href = "/login.html"});
+leave.addEventListener('click', () => {
+  alert('Your logged out');
+  localStorage.removeItem('accessToken'),
+    (window.location.href = '/login.html');
+});

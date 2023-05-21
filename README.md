@@ -3,18 +3,22 @@
 <h1>Description</h1>
 
 <p><b>This is the result of my Semester Project 2 for FED year two at Noroff Vocational School.</b>
-The assignment we got was to design and develop an auction site using Noroff.dev api, Bootstrap 5 and vanilla Javascript.
+The assignment we got was to design and develop an auction site using Noroff.dev Api, Bootstrap 5, SCSS/SASS vanilla Javascript.
  Before developing we were tasked to make a design style, prototype and trello board and kalender to plan the project well ahead of starting the developing.
 
 The rules for the auctions site is to make a site where the user can enter and see auction listings and search them without having a registered profile witn the site, but to enable bidding on any auctions or make your own, you have to register. To register you have to have a valid Noroff student or staff email.
 
-When registered you get a 1000 credit for bidding on listings, and you are supposed to be able to add/change avatar image for your profile and see your current credit. Your are also supposed to be able to make a post/auction yourself and see the bids of other listings.</p>
+When registered you get a 1000 credit for bidding on listings, and you are supposed to be able to add/change avatar image for your profile and see your current credit. Your are also supposed to be able to make a post/auction yourself and see the bids of other listings.
+
+I have managed so far to make it possible to search(the mobile search has a bug) and you can register and login to your account and see your username, avatar and credit.
+
+You can also see all listings and listings one by one.</p>
 
 <h2>Getting started</h2>
 
 <h3>Contributing</h3>
 
-<p>Here are links to the prototype and design that you can see what the goal is for the site.
+<p>Here are links to the prototype and design that you can see what the goal is for the site. If you inspect the prototype you will notice that I have evolved my design some in the process.
 </p>
 
   <li>https://xd.adobe.com/view/116f14e2-8d3f-4fde-bf00-73176ec8e3d1-443c/</li> 
@@ -43,6 +47,8 @@ https://www.linkedin.com/in/monika-sæle-2a80918a/</p>
 <h3>License</h3>
 
 <p>MIT License</p>
+
+<p>https://opensource.org/license/mit/</p<>
 
 <h3>Acknowlegdments</h3>
 
@@ -74,4 +80,8 @@ Error messages:
 
 https://uxpickle.com/best-practice-for-designing-form-error-messages/
 
-https://blog.hubspot.com/marketing/error-message</p>
+https://blog.hubspot.com/marketing/error-message
+
+Off canvas menu mobile:
+
+https://getbootstrap.com/docs/5.0/components/offcanvas/</p>

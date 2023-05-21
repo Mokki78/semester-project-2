@@ -65,18 +65,30 @@ async function getBidInformation(listingId) {
 async function createHtml(data) {
   const sellerData = await getSellerInformation(data.sellerId);
   const bidData = await getBidInformation(data.id);
+  const container = document.createElement('div');
+  container.classList.add('listingContainer');
+
+  const button = document.createElement('button');
+  button.classList.add('btn', 'btn-dark');
+  button.textContent = 'Make your bid';
+
+  button.addEventListener('click', () => {});
+
+  container.appendChild(button);
 
   const sellerName = sellerData ? sellerData.name : 'N/A';
   const bidCount = bidData ? bidData.length : 0;
 
   detailContainer.innerHTML = `
-    <div class="auction-card">
-      <div class="auction-title">${data.title}</div>
-      <img src="${data.media}" class="auction-media" alt="Listing Image">
-      <div class="auction-description">Description: ${data.description}</div>
+    <div class="card-content">
+      <div class="card-title">${data.title}</div>
+      <img src="${data.media}" class="card-media" alt="Listing Image">
+      <div class="card-description">Description: ${data.description}</div>
       <div><p>Bids on product: ${bidCount}</p></div>
       <div><p>Date ending: ${data.endsAt}</p></div>
       <div><p>Seller: ${sellerName}</p></div>
     </div>
   `;
+
+  detailContainer.appendChild(container);
 }

@@ -72,7 +72,6 @@ link:hover {
 .search-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
   margin-top: 100px;
   width: 80%;
   height: auto;
@@ -88,7 +87,6 @@ link:hover {
 #listingContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
   margin-top: 100px;
   width: 80%;
   height: auto;
@@ -99,6 +97,21 @@ link:hover {
   margin-bottom: 3rem;
   animation-name: fade;
   animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.listingContainer {
+  display: flex;
+  margin: 0 auto;
+  width: 300px;
 }
 
 @keyframes fade {
@@ -142,15 +155,11 @@ link:hover {
 .auction-bids {
   display: flex;
   margin: 0 auto;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 12px;
   text-decoration: none;
 }
 
 .auction-description {
   margin: 0 auto;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 16px;
   text-decoration: none;
   padding: 10px;
 }
@@ -169,68 +178,6 @@ link:hover {
 
 .card-content {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  margin: 0 auto;
-  padding: 1rem;
-  text-align: center;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 20px;
-  text-decoration: none;
-  width: 80%;
-  text-decoration: none;
-}
-
-.card-image {
-  display: flex;
-  flex-wrap: wrap;
-  width: 80%;
-  height: auto;
-  text-decoration: none;
-}
-
-.card-text {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 20px;
-  text-decoration: none;
-  flex-direction: row;
-}
-
-.card-title {
-  display: flex;
-  flex-wrap: wrap;
-  font-family: 'Mr Dafoe';
-  font-size: 3rem;
-  margin: 0 auto;
-}
-
-#oneListing {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 100px;
-  width: 80%;
-  height: auto;
-  margin: 0 auto;
-  padding: 2rem;
-  gap: 70px;
-  background-color: black;
-  margin-top: 60px;
-  margin-bottom: 3rem;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.card-content {
-  display: flex;
   width: 80%;
   margin: 0 auto;
   flex-direction: column;
@@ -241,9 +188,48 @@ link:hover {
   padding: 1rem;
   padding-bottom: 2rem;
   text-align: center;
-  font-family: 'Times New Roman', Times, serif;
   animation-name: fade;
   animation-duration: 1.5s;
+}
+
+.card-image {
+  display: flex;
+  width: 50%;
+  height: auto;
+  text-decoration: none;
+}
+
+.card-title {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 25px;
+  line-break: 30px;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+  color: black;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.profile-text {
+  display: flex;
+  color: white;
+}
+
+.profile-image {
+  display: flex;
+  max-width: 50%;
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 800px) {
