@@ -16,7 +16,6 @@ When registered you get a 1000 credit for bidding on listings, and you are suppo
 
 <p>Here are links to the prototype and design that you can see what the goal is for the site, if you would like to contribute to making the result even better.
 
-<ol>
   <li>https://xd.adobe.com/view/116f14e2-8d3f-4fde-bf00-73176ec8e3d1-443c/</li> 
   <li>https://xd.adobe.com/view/9d27925c-97f4-4242-83b2-92ccf7c92645-c874/  </li>
 
