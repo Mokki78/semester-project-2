@@ -53,3 +53,12 @@ function createHtml(details) {
     "bids": 0
   }
 }
+
+<template id="postForm">
+<form class="row mt-3" id="postForm">
+  <div class="col-12 d-flex justify-content-between flex-wrap align-items-center mb-3">
+    <h1>Post</h1>
+    <button type="submit" class="btn btn-success" data-action="submit">
+      <span data-action="publish">Publish</span><span data-action="update">Update</span> Post
+    </button>
+  </div>

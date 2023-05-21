@@ -1,5 +1,4 @@
 const currentProfile = () => {
-  // Retrieve the profile information from localStorage
   const profileData = JSON.parse(localStorage.getItem('profile'));
 
   if (profileData) {
@@ -7,9 +6,9 @@ const currentProfile = () => {
 
     const profileContainer = document.getElementById('myContainer');
     profileContainer.innerHTML = `
-        <div class="auction-card"><h1>${name}</h1>
-        <p>Your current credit is: ${credits}</p>
-        <img src="${avatar}" alt="Avatar"></div>
+        <div class="profile-card"><h1>${name}</h1>
+        <h3>Your current credit is: ${credits}</h3>
+      <img src="${avatar}" class="profile-image" alt="Avatar"></div>
       `;
   } else {
     console.log('Profile not found');
