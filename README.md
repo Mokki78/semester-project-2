@@ -1,24 +1,30 @@
 # Semester-project-2 for Mokki78
 
-<h1>Description</h1>
+<img width="1738" alt="easybid" src="https://github.com/Mokki78/semester-project-2/assets/100276996/2230a207-79a0-42a2-89eb-e6e8f9732771">
 
-<p><b>This is the result of my Semester Project 2 for FED year two at Noroff Vocational School.</b>
+<h2>Description</h2>
+
+<p><b>This is the result of my Semester Project 2 for FED year two at Noroff school of Technology and Digital media.</b>
 The assignment we got was to design and develop an auction site using Noroff.dev Api, Bootstrap 5, SCSS/SASS vanilla Javascript.
- Before developing we were tasked to make a design style, prototype and trello board and kalender to plan the project well ahead of starting the developing.
+ Before developing we were tasked to make a design style tyle, prototype and Trello board and calendar to plan the project before starting the developing.
 
-The rules for the auctions site is to make a site where the user can enter and see auction listings and search them without having a registered profile witn the site, but to enable bidding on any auctions or make your own, you have to register. To register you have to have a valid Noroff student or staff email.
-
-When registered you get a 1000 credit for bidding on listings, and you are supposed to be able to add/change avatar image for your profile and see your current credit. Your are also supposed to be able to make a post/auction yourself and see the bids of other listings.
-
-I have managed so far to make it possible to search(the mobile search has a bug) and you can register and login to your account and see your username, avatar and credit.
-
-You can also see all listings and listings one by one.</p>
+The rules of the auction site: 
+<ul>
+ <li>the user can enter and see auction listings.</li>
+ <li>the user can search aution listings without having a registered profile.</li>
+  <li>when a user has a registered account, and they are logged in, they can make a bid in an auction.</li>
+   <li>when a user has a registered account, and is logged in, they can make their own auction/post.</li>
+   <li>to register for an account you need a valid Noroff staff, or student mail.</li>
+  <li>when registering the user gets a 1000 credit. This credit, and they`re own posts, are to be displayed on their profile page.</li>
+   <li>it should also be displayed their avatar image on the profile page, and this should be possible to change for a new avatar image.</li>
+</ul>
+</p>
 
 <h2>Getting started</h2>
 
 <h3>Contributing</h3>
 
-<p>Here are links to the prototype and design that you can see what the goal is for the site. If you inspect the prototype you will notice that I have evolved my design some in the process.
+<p>There is still requirements for this assignment not met, so if you feel like contributing to finish this project you can start by checking out the link for the prototype, and then make a forked repo from main.
 </p>
 
   <li>https://xd.adobe.com/view/116f14e2-8d3f-4fde-bf00-73176ec8e3d1-443c/</li> 
@@ -33,9 +39,9 @@ You can also see all listings and listings one by one.</p>
 <p>https://github.com/Mokki78/semester-project-2</p>
 
 <li> Install the dependecies:</li>
-<p>For this assignment the dependencies Prettier and ESLint is installed. Needs a local web server to run. Run npm install to install dependencies.</p>
+<p>For this assignment the dependencies Prettier and ESLint is installed. It needs a local web server to run, and run npm install in terminal to install the dependencies.</p>
 
-To contribute please make a forked repo from the main.
+
 
 </ol>
 
