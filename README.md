@@ -36,7 +36,7 @@ The rules of the auction site:
 
 <ol>
 <li>Clone the repo:</li>
-<p>https://github.com/Mokki78/semester-project-2</p>
+ <p>git clone git@github.com/Mokki78/semester-project-2</p></p>
 
 <li> Install the dependecies:</li>
 <p>For this assignment the dependencies Prettier and ESLint is installed. It needs a local web server to run, and run npm install in terminal to install the dependencies.</p>
